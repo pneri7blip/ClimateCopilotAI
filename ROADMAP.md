@@ -1,45 +1,29 @@
 # ClimateCopilot AI Roadmap
 
-This document tracks the evolution of the project.
+This roadmap describes a small, honest path from the current prototype to an evaluable AI workflow. Completed items refer only to behavior present in the repository.
 
----
+## Phase 1 — Foundation (current)
 
-# Phase 1 - Foundation
+- [x] Define an environmental/compliance workflow direction
+- [x] Define a structured `ComplianceRisk` output
+- [x] Preserve source evidence in the output
+- [x] Return no finding for unsupported text instead of inventing one
+- [x] Add a runnable example and unit tests
 
-## ✅ Sprint 1
-- Repository created
-- Initial README
+## Phase 2 — Prototype
 
-## ✅ Sprint 2
-- ClimateData module created
+- [ ] Add document ingestion while preserving source boundaries
+- [ ] Expand the set of supported compliance-risk patterns
+- [ ] Add an optional LLM adapter with schema-constrained output
+- [ ] Add human-reviewable structured report generation
 
-## ✅ Sprint 3
-- Main program connected to ClimateData
+## Phase 3 — Evaluation
 
----
+- [ ] Build a representative labelled dataset
+- [ ] Measure extraction accuracy and evidence recall
+- [ ] Test hallucination resistance and handling of `Not specified.`
+- [ ] Compare prompting strategies and models
 
-# Next Sprint
+## Explicitly out of scope for now
 
-## Sprint 4
-- Generate the first climate report
-
----
-
-# Future Goals
-
-- Read real climate data from public APIs
-- AI-powered climate assistant
-- Interactive dashboard
-- Risk prediction
-- Climate maps
-- Automated reports
-- Multi-city support
-- Web application
-- Authentication system
-- Public administration dashboard
-
----
-
-# Long-Term Vision
-
-ClimateCopilot AI aims to become an open-source platform that helps governments and public administrations make better climate-related decisions using artificial intelligence.
+Dashboards, authentication, databases, public APIs, automated decisions, and production deployment are not current objectives. They should not be added before the extraction contract and evaluation methodology are reliable.
